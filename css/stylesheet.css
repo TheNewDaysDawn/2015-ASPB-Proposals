@@ -217,6 +217,13 @@ Full-Width Classes & IDs
 
 #header_wrap {
   background: #3498db;
+/*
+  background-image:url("images/soybean-green-aspb.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:100% 80px;
+  height:80px;
+*/
 }
 
 #project_title {
