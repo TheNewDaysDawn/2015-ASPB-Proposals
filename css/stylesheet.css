@@ -1,0 +1,279 @@
+/*******************************************************************************
+Sources:
+	Slate Theme for GitHub Pages by Jason Costello, @jsncostello
+	Leap Day Theme for GitHub Pages by Matt Graham
+	TwittStrap Theme http://twittstrap.com/twittstrap/
+	
+Color Scheme:
+    jumbotron - light blue = #3498db | rgb(52,​ 152,​ 219)
+    navbar - dark blue = #2c3e50 | rgb(44,​ 62,​ 80)
+	banner - yellow = #ffcc00 | rgb(255,​ 204,​ 0)
+	footer - turquoise = #004d61 | (rgb(0,​ 77,​ 97)
+	background - white = #ffffff | rgb(255,​ 255,​ 255)
+	background - white smoke = #f5f5f5 | rgb(245, 245, 245)
+	background - medium gray = #373737 | rgb(55, 55, 55)
+	background - dark gray = #222222 | rgb(34, 34, 34)
+	background - heavy gray = #111111 | rgb(17, 17, 17)
+	text link - blue = #007edf | rgb (0, 126, 223)
+	text footer - light gray95 = #f2f2f2 | rgb(242, 242, 242)
+	text footer links - cyan = #20be9e | rgb(32,​ 190,​ 158)
+	
+Edited by:  Dawn Brendle Jackson, credo@aristotle.net, @TheNewDaysDawn
+
+Last Revision:  3/17/2015
+*******************************************************************************/
+
+@import url(pygment_trac.css);
+
+/*******************************************************************************
+MeyerWeb Reset
+*******************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+
+body {
+  box-sizing: border-box;
+  color: #373737;
+  background: #ffffff;
+  font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  line-height: 1.3em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: .7em 0;
+  font-weight: 700;
+  color: #222222;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+/*  letter-spacing: -.07em;*/
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: left;
+}
+
+h2 {
+  font-size: 2.3em;
+  text-align: left;
+}
+
+p {
+  margin: 0px;
+}
+
+footer p {
+  color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #20be9e;
+  text-shadow: none;
+
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+}
+
+a:hover, a:focus {color: #20be9e; text-decoration: underline;}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/*******************************************************************************
+ToolTips (courtesy of http://jsfiddle.net/AndreaLigios/jtLbpy62/)
+*******************************************************************************/
+
+[tooltip]:before {
+    /* needed - do not touch */
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+    
+    /* customizable */
+    transition: all 0.15s ease;
+    padding: 10px;
+    color: #222222;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px silver;    
+}
+
+[tooltip]:hover:before {
+    /* needed - do not touch */
+    opacity: 1;
+    
+    /* customizable */
+    background: #ffffff;
+    margin-top: -50px;
+    margin-left: 20px;    
+}
+
+[tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
+}
+
+
+/*******************************************************************************
+Full-Width Classes & IDs
+*******************************************************************************/
+
+.outer {
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  max-width: 75%;
+  padding: 40px 10px 20px 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inner img {
+    margin-right: 15px;
+    float: left;
+	padding: 0;
+}
+
+.social {
+ 	position: relative;
+    max-width: 75%;
+    text-align: center;
+	margin: 0 auto;
+    margin-top: 20px;
+	margin-bottom: 30px;
+} 
+
+.social p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.license-txt {
+  padding: 30px 10px 30px 10px;
+  text-align: center;
+
+}
+
+#banner {
+  display: block;
+  position: absolute;
+  top:0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 10px 10px 10px;
+  color: #ff;
+  background: #ffcc00;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#header_wrap {
+  background: #3498db;
+}
+
+#project_title {
+  margin: 0;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+
+#project_tagline {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  background: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+
+#footer_wrap {
+  background: #004d61;
+  color: #f2f2f2;
+}
+
+#author {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px 20px 0px;
+)
+
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size:14px;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 40px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+}
