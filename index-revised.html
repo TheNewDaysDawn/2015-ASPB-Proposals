@@ -36,25 +36,53 @@
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />  <!-- Pre-req for Font Awesome; responsive layout -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />  <!-- Social media icons -->
-		<link rel="stylesheet" href="css/jumbotron.css" >  <!-- Custom Bootstrap style -->
 		<link rel="stylesheet" href="css/demo_table_jui.css" />  <!-- General styling for DataTables with general jQueryUI styling added -->
 		<link rel="stylesheet" href="css/ui-lightness/jquery-ui.custom.css" />  <!-- jQueryUI Themeroller theme for DataTables layout -->
-    <link rel="stylesheet" href="css/stylesheet.css" />  <!-- GitHub's Slate Theme for websites -->
+		<link rel="stylesheet" href="css/stylesheet-revised.css" />  <!-- GitHub's Slate Theme for websites -->
 	
   </head>
 
   <body>
- 
+
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+<!--
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Arkansas Soybean Promotion Board</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" placeholder="Email" class="form-control">
+						</div>
+						<div class="form-group">
+							<input type="password" placeholder="Password" class="form-control">
+						</div>
+						<button type="submit" class="btn btn-success">Sign in</button>
+					</form>
+				</div><!--/.navbar-collapse -->
+-->
+			</div>
+    </nav>
+  
 		<!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-			<a id="banner" title="Email Lanny Ashlock, ASPB Coordinator" alt="Email Lanny Ashlock" href="mailto:ashlocklanny5@gmail.com">Questions?</a>
-			<div id="header_transbox">
-				<a href="http://www.themiraclebean.com/"><img class="img" title="Go to Arkansas Soybean Promotion Board's website" alt="Arkansas Soybean Promotion Board" src="images/logo-aspb-225x106.jpg"></a>
+    <div class="jumbotron">
+      <div class="container">
+				<p><a class="btn btn-primary btn-lg" href="mailto:ashlocklanny5@gmail.com" role="button">Questions?</a></p>
+<!--			<a id="banner" title="Email Lanny Ashlock, ASPB Coordinator" alt="Email Lanny Ashlock" href="mailto:ashlocklanny5@gmail.com">Questions?</a> -->
+				<div class="header_transbox">
+					<a href="http://www.themiraclebean.com/"><img class="img" title="Go to Arkansas Soybean Promotion Board's website" alt="Arkansas Soybean Promotion Board" src="images/logo-aspb-225x106.jpg"></a>
 					<h1 id="project_title">2015 ASPB Project Proposals</h1>
 					<h2 id="project_tagline">Database of 2015 research project proposals for Arkansas checkoff-funding</h2>
-			</div>
-        </header>
+				</div>
+      </div>
     </div>
 
     <!-- MAIN CONTENT - Table -->

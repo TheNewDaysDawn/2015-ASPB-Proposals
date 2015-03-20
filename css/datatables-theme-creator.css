@@ -1,6 +1,14 @@
-/*
- * Custom DataTables Theme for MSSB generated at http://www.datatables.net/manual/styling/theme-creator
- */
+/************************************************************************************************
+ *  File:         DataTables-theme-creator.css
+ *  Description:  Custom DataTables theme for Dawn Brendle Jackson generated at 
+					http://www.datatables.net/manual/styling/theme-creator
+ *  Author:       Dawn Brendle Jackson
+ *  Created:      3/19/2015 
+ ************************************************************************************************/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Table styles
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 table.dataTable {
   width: 100%;
   margin: 0 auto;
@@ -229,9 +237,9 @@ table.dataTable td {
   -moz-box-sizing: content-box;
   box-sizing: content-box; }
  
-/*
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Control feature layout
- */
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .dataTables_wrapper {
   position: relative;
   clear: both;
